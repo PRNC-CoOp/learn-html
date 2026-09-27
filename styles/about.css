@@ -1,0 +1,112 @@
+:root {
+  --ff1: "PT Sans", sans-serif;
+  --text-muted: oklch(0.76 0 204);
+  --highlight: oklch(0.5 0 204);
+  --border: oklch(0.4 0 204);
+  --border-muted: oklch(0.3 0 204);
+  --primary: oklch(0.76 0.1 204);
+  --secondary: oklch(0.76 0.1 24);
+  --danger: oklch(0.7 0.05 30);
+  --warning: oklch(0.7 0.05 100);
+  --success: oklch(0.7 0.05 160);
+  --info: oklch(57.636% 0.03601 260.011);
+  --h1: bold max(36px, 4vw) / max(48px, 5vw) var(--ff1);
+  --navh: bold max(9px, 1vw) / max(12px, 1.25vw) var(--ff1);
+  --p: bold max(18px, 2vw) / max(24px, 2.5vw) "Karla", sans-serif;
+  --transition: 0.3s ease-in-out;
+  --color-gradient: linear-gradient(45deg, hsl(0, 0%, 20%), hsl(0, 0%, 15%));
+  /* --primary: #ff1e537; */
+  --color1: #2b4162;
+  --color2: #5c7eb4;
+  --color3: #f5f0f6;
+  --color4: #d7b377;
+  --color5: #8f754f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0f6;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #2b4162;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.main-content {
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  color: #8f754f;
+  font: var(--p);
+  font-family: var(--ff1);
+}
+
+.contact-section {
+  color: #d7b377;
+  font-size: 1.3rem;
+}
+
+.cta-section {
+  background-color: #2b4162;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #f5f0f6;
+  color: #8f754f;
+  text-align: center;
+  padding: 10px;
+}
+
+.cta-section {
+  background-color: #2b4162;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+
+  button {
+    background-color: #8f754f; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+
+  button:hover {
+    background-color: #4b598b; /* Button background color on hover */
+  }
+}
+
+.homes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.home {
+  width: 10rem;
+  background-color: #8f754f; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding around the button text */
+  font-size: 16px; /* Font size of the button text */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.home:hover {
+  background-color: #4b598b; /* Button background color on hover */
+}

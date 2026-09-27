@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Editor</title>
+</head>
+<body>
+    <h2>Example of HTML Code Editor</h2>
+    <textarea id="editor"></textarea>
+
+    <button onclick="renderHTML()">Render HTML</button>
+
+    <div id="output"></div>
+
+    <script>
+        // Render the HTML code when the user clicks the button
+        function renderHTML() {
+            const html = document.getElementById('editor').value;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const output = document.getElementById('output');
+            output.innerHTML = '';
+            output.appendChild(doc.body);
+        }
+    </script>
+</body>
+</html>
